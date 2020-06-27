@@ -414,14 +414,14 @@ img {
   padding-bottom: 16px;
 }
 
-.social__link {
-  display: flex;
-}
-
 .icon {
   width: 20px;
   height: 20px;
-  fill: #2196f3;
+}
+
+.icon:hover,
+.icon:focus {
+  fill: blue;
 }
 
 .layout-gray {
@@ -451,6 +451,16 @@ img {
   margin-right: auto;
 }
 
+.social__link:hover,
+.social__link:focus {
+  fill: blue;
+}
+
+.container.partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .partners__heading {
   font-weight: bold;
   font-size: 36px;
@@ -458,38 +468,24 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
-.partners__items {
+.partners-items {
   display: flex;
   align-items: center;
-  padding-bottom: 94px;
 }
 
-.partners__item {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
+.partner__item {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
-}
-
-.partners__item:hover,
-.partners__item:focus {
-  border-color: #2196f3;
-}
-
-.partners__item:first-child {
-  padding-left: 0px;
-}
-
-.partners__item:last-child {
-  padding-right: 0px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 footer {
@@ -703,4 +699,10 @@ footer {
 .portfolio__block:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.partner__item:focus,
+.partner__item:hover {
+  border-color: blue;
+  fill: blue;
 }
