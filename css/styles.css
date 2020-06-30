@@ -189,10 +189,15 @@ img {
   align-items: center;
 }
 
-.header-items {
+.header {
   border-bottom-style: solid;
   border-bottom-color: #ececec;
   border-width: 1px;
+}
+
+.head-nav__item-link.is--active {
+  border-bottom: 4px solid #2196f3;
+  color: #2196f3;
 }
 
 .logo {
@@ -295,6 +300,7 @@ img {
 .features__items {
   display: flex;
   align-items: center;
+  margin: 0 -15px;
 }
 
 .features__picture {
@@ -305,8 +311,7 @@ img {
 
 .features__item {
   max-width: 270px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 15px;
 }
 
 .features__heading {
@@ -334,6 +339,7 @@ img {
 }
 
 .activity__heading {
+  position: relative;
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -353,28 +359,24 @@ img {
   margin-left: auto;
 }
 
-.activity__item:first-child {
-  padding-left: 0px;
-  background-image: url(../images/box1.jpg);
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
-.activity__item:last-child {
-  padding-right: 0px;
-  background-image: url(../images/box3.jpg);
-}
-
-.activity__item {
-  background-repeat: no-repeat;
+.activity__block {
   width: 370px;
-  background-size: 100%;
-  padding-top: 224px;
+  height: 294px;
+  margin: 0 15px;
 }
 
-.activity__item {
-  background-image: url(../images/box2.jpg);
+.activity__image {
+  position: absolute;
 }
 
 .activity__sheading {
+  position: relative;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -382,9 +384,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding: 27px 0;
   background-color: rgba(47, 48, 58, 0.8);
+  top: 76.5%;
 }
 
 .cards__heading {
@@ -401,12 +403,12 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
+  margin: 0 -15px;
 }
 
 .card__item {
   width: 270px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 15px;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -496,6 +498,7 @@ img {
 .partners-items {
   display: flex;
   align-items: center;
+  margin: 0 -15px;
 }
 
 .partner__item {
@@ -684,13 +687,96 @@ footer {
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio__block-text {
-  position: absolute;
+.social__link.bckc {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.social__link.bckc:hover,
+.social__link.bckc:focus {
+  background-color: #2196f3;
+}
+
+.partner__item {
+  fill: #afb1b8;
+}
+
+.partner__item:hover,
+.partner__item:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+.portfolio-content__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio-content__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.block-item__content-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.block-items {
   display: flex;
 }
 
-.portfolio-block-img {
-  position: relative;
+.block-wrap__text {
+  margin: 0 24px;
+  margin-top: 63px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.block-item__content {
+  padding: 20px 24px;
+}
+
+.block-item {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.block-item__content-type {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.block-item {
+  width: 370px;
+  height: 294px;
+}
+
+.portfolio__block:hover {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__block-text {
+  display: flex;
 }
 
 .portfolio__block {
@@ -727,30 +813,4 @@ footer {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.portfolio__block:hover,
-.portfolio__block:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.social__link.bckc {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-}
-
-.social__link.bckc:hover,
-.social__link.bckc:focus {
-  background-color: #2196f3;
-}
-
-.partner__item {
-  fill: #afb1b8;
-}
-
-.partner__item:hover,
-.partner__item:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
 }
